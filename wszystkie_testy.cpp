@@ -15,7 +15,7 @@ int main() {
     int wybor;
 
     do {
-        std::cout << "\n=== MENU TESTÓW BIBLIOTEKI NUMERYCZNEJ ===" << std::endl;
+        std::cout << "\n=== MENU TESTOW BIBLIOTEKI NUMERYCZNEJ ===" << std::endl;
         std::cout << "1. Test metody bisekcji" << std::endl;
         std::cout << "2. Test eliminacji Gaussa" << std::endl;
         std::cout << "3. Test regu³y trapezów" << std::endl;
