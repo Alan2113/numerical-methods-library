@@ -10,3 +10,6 @@ void demonstracjaBisekcji() {
     double wynik = BibliotekaNumeryczna::metodaBisekcji(f, 0, 3, 0.001);
     std::cout << "Pierwiastek: " << wynik << std::endl;
 }
+
+
+

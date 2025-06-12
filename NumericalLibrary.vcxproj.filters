@@ -72,5 +72,8 @@
     <ClCompile Include="test_metody_eulera.cpp">
       <Filter>testy</Filter>
     </ClCompile>
+    <ClCompile Include="przyklad_interpolacja_lagrangea.cpp">
+      <Filter>przyklady</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

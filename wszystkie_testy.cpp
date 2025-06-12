@@ -8,6 +8,8 @@ void testujReguleTrapezow();
 void testujInterpolacjeLagrangea();
 void testujMetodeNajmniejszychKwadratow();
 void testujMetodeEulera();
+void demonstracjaBisekcji();
+void demonstracjaInterpolacjiLagrangea();
 
 int main() {
     int wybor;
@@ -22,6 +24,8 @@ int main() {
         std::cout << "6. Test metody Eulera" << std::endl;
         std::cout << "7. Uruchom wszystkie testy" << std::endl;
         std::cout << "0. Zakoñcz" << std::endl;
+        std::cout << "8. PRZYK£AD: Zastosowanie metody bisekcji" << std::endl;
+        std::cout << "9. PRZYK£AD: Zastosowanie interpolacji Lagrange'a" << std::endl;
         std::cout << "Wybierz opcjê (0-7): ";
 
         std::cin >> wybor;
@@ -90,6 +94,12 @@ int main() {
                 std::cout << "? Aproksymacja (metoda najmniejszych kwadratów)" << std::endl;
                 std::cout << "? Rozwi¹zywanie równañ ró¿niczkowych (metoda Eulera)" << std::endl;
                 std::cout << std::string(60, '=') << std::endl;
+                break;
+            case 8:
+                demonstracjaBisekcji();
+                break;
+            case 9:
+                demonstracjaInterpolacjiLagrangea();
                 break;
             case 0:
                 std::cout << "Zakoñczenie programu. Dziêkujemy za korzystanie z biblioteki numerycznej!" << std::endl;
