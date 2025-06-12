@@ -30,25 +30,22 @@
     <ClInclude Include="framework.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="pch.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="biblioteka_numeryczna.h">
       <Filter>naglowki</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="NumericalLibrary.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
     <ClCompile Include="metoda_bisekcji.cpp">
       <Filter>zrodla</Filter>
     </ClCompile>
     <ClCompile Include="test_bisekcji.cpp">
       <Filter>testy</Filter>
+    </ClCompile>
+    <ClCompile Include="przyklad_bisekcji.cpp">
+      <Filter>przyklady</Filter>
+    </ClCompile>
+    <ClCompile Include="inne_metody.cpp">
+      <Filter>zrodla</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

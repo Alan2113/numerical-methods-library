@@ -1,33 +1,38 @@
 #include "biblioteka_numeryczna.h"
 #include <stdexcept>
 #include <cmath>
-#include <functional>
-using namespace std;
 
 namespace BibliotekaNumeryczna {
-    double metodaBisekcji(std::function<double(double)> f, double a, double b, double tolerancja) {
-        // SprawdŸ warunek pocz¹tkowy
-        if (f(a) * f(b) >= 0) {
+    double metodaBisekcji(std::function<double(double)> f, double a, double b, double epsilon) {
+        double fa = f(a);
+        double fb = f(b);
+
+        if (fa * fb >= 0) {
             throw std::invalid_argument("Funkcja musi mieæ ró¿ne znaki na koñcach przedzia³u");
         }
 
-        double c = a;
-        while ((b - a) >= tolerancja) {
-            // ZnajdŸ punkt œrodkowy
-            c = (a + b) / 2;
+        if (fa == 0.0) return a;
+        if (fb == 0.0) return b;
 
-            // SprawdŸ czy znaleŸliœmy dok³adny pierwiastek
-            if (f(c) == 0.0) {
-                break;
+        double srodek;
+        while (std::abs(b - a) > epsilon) {
+            srodek = (a + b) / 2.0;
+            double fsrodek = f(srodek);
+
+            if (fsrodek == 0.0) {
+                return srodek;
             }
-            // Zdecyduj która po³owa zawiera pierwiastek
-            else if (f(c) * f(a) < 0) {
-                b = c;
+
+            if (fa * fsrodek < 0) {
+                b = srodek;
+                fb = fsrodek;
             }
             else {
-                a = c;
+                a = srodek;
+                fa = fsrodek;
             }
         }
-        return c;
+
+        return (a + b) / 2.0;
     }
 }
