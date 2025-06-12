@@ -54,5 +54,23 @@
     <ClCompile Include="wszystkie_testy.cpp">
       <Filter>testy</Filter>
     </ClCompile>
+    <ClCompile Include="metoda_najmniejszych_kwadratow.cpp">
+      <Filter>zrodla</Filter>
+    </ClCompile>
+    <ClCompile Include="test_najmniejszych_kwadratow.cpp">
+      <Filter>testy</Filter>
+    </ClCompile>
+    <ClCompile Include="interpolacja_lagrangea.cpp">
+      <Filter>zrodla</Filter>
+    </ClCompile>
+    <ClCompile Include="metoda_eulera.cpp">
+      <Filter>zrodla</Filter>
+    </ClCompile>
+    <ClCompile Include="testy_interpolacji_lagrangea.cpp">
+      <Filter>testy</Filter>
+    </ClCompile>
+    <ClCompile Include="test_metody_eulera.cpp">
+      <Filter>testy</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

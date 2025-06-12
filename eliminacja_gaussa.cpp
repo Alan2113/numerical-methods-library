@@ -5,15 +5,15 @@
 
 namespace BibliotekaNumeryczna {
     std::vector<double> eliminacjaGaussa(std::vector<std::vector<double>> A, std::vector<double> b) {
-        int n = b.size();
+        int n = static_cast<int>(b.size());
         const double eps = 1e-12; // sta³a przybli¿enia zera
 
         // SprawdŸ wymiary macierzy
-        if (A.size() != n) {
+        if (static_cast<int>(A.size()) != n) {
             throw std::invalid_argument("Macierz A musi byæ kwadratowa");
         }
         for (int i = 0; i < n; i++) {
-            if (A[i].size() != n) {
+            if (static_cast<int>(A[i].size()) != n) {
                 throw std::invalid_argument("Macierz A musi byæ kwadratowa");
             }
         }
