@@ -142,10 +142,15 @@
     <ClInclude Include="framework.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="eliminacja_gaussa.cpp" />
     <ClCompile Include="inne_metody.cpp" />
     <ClCompile Include="metoda_bisekcji.cpp" />
     <ClCompile Include="przyklad_bisekcji.cpp" />
+    <ClCompile Include="regula_trapezow.cpp" />
     <ClCompile Include="test_bisekcji.cpp" />
+    <ClCompile Include="test_eliminacji_gaussa.cpp" />
+    <ClCompile Include="test_reguly_trapezow.cpp" />
+    <ClCompile Include="wszystkie_testy.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

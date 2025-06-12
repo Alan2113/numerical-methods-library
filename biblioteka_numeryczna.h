@@ -5,9 +5,13 @@
 #include <functional>
 
 namespace BibliotekaNumeryczna {
-    // TYLKO DEKLARACJE - bez implementacji!
+    // Istniej¹ca metoda bisekcji...
     double metodaBisekcji(std::function<double(double)> f, double a, double b, double epsilon = 0.00001);
+
+    // NOWA: Eliminacja Gaussa
     std::vector<double> eliminacjaGaussa(std::vector<std::vector<double>> A, std::vector<double> b);
+
+    // Pozosta³e metody...
     double regulaTrapezow(std::function<double(double)> f, double a, double b, int n);
 }
 

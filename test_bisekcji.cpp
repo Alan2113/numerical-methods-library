@@ -58,15 +58,3 @@ void testujMetodeBisekcji() {
 
     std::cout << "\n=== WSZYSTKIE TESTY PRZESZ£Y POMYŒLNIE! ===" << std::endl;
 }
-
-int main() {
-    try {
-        testujMetodeBisekcji();
-        // demonstracjaBisekcji(); // jeœli chcesz wywo³aæ przyk³ad
-    }
-    catch (const std::exception& e) {
-        std::cout << "B³¹d: " << e.what() << std::endl;
-        return 1;
-    }
-    return 0;
-}
