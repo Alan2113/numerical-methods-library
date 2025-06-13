@@ -20,10 +20,10 @@ void testujInterpolacjeLagrangea() {
     double oczekiwany1 = 2 * 0.5 + 1; // f(0.5) = 2
 
     std::cout << "Interpolacja w x = 0.5: " << wynik1 << std::endl;
-    std::cout << "Wartoœæ rzeczywista: " << oczekiwany1 << std::endl;
-    std::cout << "B³¹d: " << std::abs(wynik1 - oczekiwany1) << std::endl;
+    std::cout << "Wartosc rzeczywista: " << oczekiwany1 << std::endl;
+    std::cout << "Blad: " << std::abs(wynik1 - oczekiwany1) << std::endl;
     assert(std::abs(wynik1 - oczekiwany1) < 0.000001);
-    std::cout << "? Test 1 przeszed³ pomyœlnie!" << std::endl;
+    std::cout << "? Test 1 przeszedl pomyslnie!" << std::endl;
 
     // Test 2: Interpolacja kwadratowa przez 3 punkty
     std::cout << "\nTest 2: Interpolacja kwadratowa f(x) = x^2" << std::endl;
@@ -34,17 +34,17 @@ void testujInterpolacjeLagrangea() {
     double oczekiwany2 = 1.5 * 1.5; // f(1.5) = 2.25
 
     std::cout << "Interpolacja w x = 1.5: " << wynik2 << std::endl;
-    std::cout << "Wartoœæ rzeczywista: " << oczekiwany2 << std::endl;
-    std::cout << "B³¹d: " << std::abs(wynik2 - oczekiwany2) << std::endl;
+    std::cout << "Wartosc rzeczywista: " << oczekiwany2 << std::endl;
+    std::cout << "Blad: " << std::abs(wynik2 - oczekiwany2) << std::endl;
     assert(std::abs(wynik2 - oczekiwany2) < 0.000001);
-    std::cout << "? Test 2 przeszed³ pomyœlnie!" << std::endl;
+    std::cout << "? Test 2 przeszedl pomyslnie!" << std::endl;
 
     // Test 3: Interpolacja przez punkty funkcji sin(x)
     std::cout << "\nTest 3: Interpolacja funkcji sin(x)" << std::endl;
     std::vector<double> x3 = { 0, M_PI / 6, M_PI / 4, M_PI / 3, M_PI / 2 };
     std::vector<double> y3;
 
-    // Oblicz wartoœci sin(x) w punktach
+    // Oblicz wartosci sin(x) w punktach
     for (double xi : x3) {
         y3.push_back(sin(xi));
     }
@@ -54,19 +54,19 @@ void testujInterpolacjeLagrangea() {
     double oczekiwany3 = sin(punkt_test);
 
     std::cout << "Interpolacja sin(" << punkt_test << ") = " << wynik3 << std::endl;
-    std::cout << "Wartoœæ rzeczywista: " << oczekiwany3 << std::endl;
-    std::cout << "B³¹d: " << std::abs(wynik3 - oczekiwany3) << std::endl;
-    assert(std::abs(wynik3 - oczekiwany3) < 0.01); // Wiêksza tolerancja dla funkcji nieliniowej
-    std::cout << "? Test 3 przeszed³ pomyœlnie!" << std::endl;
+    std::cout << "Wartosc rzeczywista: " << oczekiwany3 << std::endl;
+    std::cout << "Blad: " << std::abs(wynik3 - oczekiwany3) << std::endl;
+    assert(std::abs(wynik3 - oczekiwany3) < 0.01); // Wieksza tolerancja dla funkcji nieliniowej
+    std::cout << "? Test 3 przeszedl pomyslnie!" << std::endl;
 
-    // Test 4: Sprawdzenie dok³adnoœci w punktach wêz³owych
-    std::cout << "\nTest 4: Sprawdzenie dok³adnoœci w punktach wêz³owych" << std::endl;
+    // Test 4: Sprawdzenie dokladnosci w punktach wezlowych
+    std::cout << "\nTest 4: Sprawdzenie dokladnosci w punktach wezlowych" << std::endl;
     for (int i = 0; i < static_cast<int>(x2.size()); i++) {
         double wynik_wezlowy = BibliotekaNumeryczna::interpolacjaLagrangea(x2, y2, x2[i]);
         std::cout << "f(" << x2[i] << ") = " << wynik_wezlowy << ", oczekiwane: " << y2[i] << std::endl;
         assert(std::abs(wynik_wezlowy - y2[i]) < 0.000001);
     }
-    std::cout << "? Test 4 przeszed³ pomyœlnie!" << std::endl;
+    std::cout << "? Test 4 przeszedl pomyslnie!" << std::endl;
 
-    std::cout << "\n=== WSZYSTKIE TESTY INTERPOLACJI LAGRANGE'A PRZESZ£Y! ===" << std::endl;
+    std::cout << "\n=== WSZYSTKIE TESTY INTERPOLACJI LAGRANGE'A PRZESZLY! ===" << std::endl;
 }
