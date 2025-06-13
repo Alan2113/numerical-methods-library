@@ -16,12 +16,12 @@ void testujMetodeNajmniejszychKwadratow() {
 
     auto wynik1 = BibliotekaNumeryczna::metodaNajmniejszychKwadratow(x1, y1);
     std::cout << "Rownanie: y = " << wynik1.a << "x + " << wynik1.b << std::endl;
-    std::cout << "R? = " << wynik1.r2 << std::endl;
+    std::cout << "Wspolczynnik determinacji R^2 = " << wynik1.r2 << std::endl;
 
     assert(std::abs(wynik1.a - 2.0) < 0.001);
     assert(std::abs(wynik1.b - 1.0) < 0.001);
     assert(wynik1.r2 > 0.99);
-    std::cout << "? Test 1 przeszedl pomyslnie!" << std::endl;
+    std::cout << "Test 1 przeszedl pomyslnie!" << std::endl;
 
     std::cout << "\n=== WSZYSTKIE TESTY METODY NAJMNIEJSZYCH KWADRATOW PRZESZLY! ===" << std::endl;
 }

@@ -45,7 +45,7 @@ void testujMetodeEulera() {
     std::cout << "? Test 2 przeszedl pomyslnie!" << std::endl;
 
     // Test 3: y' = x, y(0) = 0, rozwiazanie analityczne y = x?/2
-    std::cout << "\nTest 3: y' = x, y(0) = 0 (rozwiazanie: y = x?/2)" << std::endl;
+    std::cout << "\nTest 3: y' = x, y(0) = 0 (rozwiazanie: y = x^2/2)" << std::endl;
     auto f3 = [](double x, double y) { return x; };
     std::vector<double> wynik3 = BibliotekaNumeryczna::metodaEulera(f3, 0.0, 0.0, 0.1, 10);
 

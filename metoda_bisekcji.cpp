@@ -8,7 +8,7 @@ namespace BibliotekaNumeryczna {
         double fb = f(b);
 
         if (fa * fb >= 0) {
-            throw std::invalid_argument("Funkcja musi mieæ ró¿ne znaki na koñcach przedzia³u");
+            throw std::invalid_argument("Funkcja musi miec rozne znaki na koncach przedzialu");
         }
 
         if (fa == 0.0) return a;

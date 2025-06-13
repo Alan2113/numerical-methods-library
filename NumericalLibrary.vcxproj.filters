@@ -75,5 +75,8 @@
     <ClCompile Include="przyklad_interpolacja_lagrangea.cpp">
       <Filter>przyklady</Filter>
     </ClCompile>
+    <ClCompile Include="przyklad_miejsca_zerowe.cpp">
+      <Filter>przyklady</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

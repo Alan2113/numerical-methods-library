@@ -23,7 +23,7 @@ void testujEliminacjeGaussa() {
     // Sprawdzenie: x = 2, y = 1
     assert(std::abs(rozwiazanie1[0] - 2.0) < 0.001);
     assert(std::abs(rozwiazanie1[1] - 1.0) < 0.001);
-    std::cout << "? Test 1 przeszedl pomyslnie!" << std::endl;
+    std::cout << "Test 1 przeszedl pomyslnie!" << std::endl;
 
     // Test 2: Uklad 3x3
     std::cout << "\nTest 2: Uklad 3x3" << std::endl;
@@ -47,7 +47,7 @@ void testujEliminacjeGaussa() {
     assert(std::abs(rozwiazanie2[0] - 1.0) < 0.001);
     assert(std::abs(rozwiazanie2[1] - 3.0) < 0.001);
     assert(std::abs(rozwiazanie2[2] - 5.0) < 0.001);
-    std::cout << "? Test 2 przeszedl pomyslnie!" << std::endl;
+    std::cout << "Test 2 przeszedl pomyslnie!" << std::endl;
 
     // Test 3: Weryfikacja rozwiazania
     std::cout << "\nTest 3: Weryfikacja rozwiazania" << std::endl;
@@ -63,7 +63,7 @@ void testujEliminacjeGaussa() {
     assert(std::abs(sprawdzenie1 - b2[0]) < 0.001);
     assert(std::abs(sprawdzenie2 - b2[1]) < 0.001);
     assert(std::abs(sprawdzenie3 - b2[2]) < 0.001);
-    std::cout << "? Test 3 przeszedl pomyslnie!" << std::endl;
+    std::cout << "Test 3 przeszedl pomyslnie!" << std::endl;
 
     std::cout << "\n=== WSZYSTKIE TESTY ELIMINACJI GAUSSA PRZESZLY! ===" << std::endl;
 }
