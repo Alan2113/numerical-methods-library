@@ -108,3 +108,13 @@ Obsługa wyjątków i kontrola błędów
 Modularność i separacja interfejsu
 
 Kompletne testy weryfikacyjne
+
+## Budowanie
+
+```bash
+git clone https://github.com/Alan2113/numerical-methods-library
+cd numerical-methods-library
+cmake -B build
+cmake --build build
+./build/wszystkie_testy
+```
